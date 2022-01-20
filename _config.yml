@@ -22,9 +22,13 @@ title: incubator comics
 email: kenhtsun@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   comics to help you study
-baseurl: "incubator" # the subpath of your site, e.g. /blog
+baseurl: "/incubator" # the subpath of your site, e.g. /blog
 url: "https://spesthecat.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  spesthecat
+
+collections:
+  comics:
+    output: true
 
 # Build settings
 theme: minima
