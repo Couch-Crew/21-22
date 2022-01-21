@@ -1,0 +1,29 @@
+---
+---
+
+body {
+  margin: 0;
+}
+
+nav {
+  line-height: 20px;
+  font-size: 1.5em;
+
+  position: relative;
+  margin: 3em 0;
+  display: flex;
+  
+  flex-flow: row nowrap;
+  justify-content: center;
+  
+  a {
+    position: relative;
+    text-decoration: none;
+    margin: 4px 20px;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 50vw;
+}
