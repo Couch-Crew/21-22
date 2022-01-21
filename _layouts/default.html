@@ -3,16 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }} | comics</title>
-    <!--<link rel="stylesheet" href="/css/style.css">-->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/monophase/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
   </head>
   <body>
-    <nav>
-      <a href='{{ site.baseurl }}/'>Home</a>
-      <a href='{{ site.baseurl }}/about.html'>About</a>
-    </nav>
-    <h1>{{ page.title }}</h1>
-    <section>
+    {% include nav.html %}
+    <div class='content'>
       {{ content }}
-    </section>
+    </div>
   </body>
 </html>
