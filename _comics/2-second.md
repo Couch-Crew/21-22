@@ -1,6 +1,10 @@
 ---
 title: last post
-layout: default
+comic-id: 2
+layout: comic 
+image: 1-first.jpeg
 ---
 
-pls work
+
+## begin pretend explanation
+lorem ipsum

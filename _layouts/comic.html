@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include html-head.html %}
+    <link rel='stylesheet' href='{{ site.baseurl }}/css/comic.css'>
+  </head>
+  <body>
+    {% include nav.html %}
+    <div class='content'>
+      <div class='display-nav'>
+        {% assign prev_id = page.comic-id | minus: 1 %}
+        {% assign prev_comic = site.comics | where: "comic-id", prev_id | first %}
+        <a 
+        class='link left'
+        href='{{ prev_comic.url | relative_url }}'>
+          <span class='arrow'>&lt;</span>
+        </a>
+        
+        <h1 class='comic-title'>{{ page.title }}</h1>
+
+        {% assign next_id = page.comic-id | plus: 1 %}
+        {% assign next_comic = site.comics | where: "comic-id", next_id | first %}
+        <a 
+        class='link right'
+        href='{{ next_comic.url | relative_url }}'>
+          <span class='arrow'>&gt;</span>
+        </a>
+      </div>
+
+      <img 
+      class='comic' 
+      src='{{ page.image }}' 
+      alt="oops- there's supposed to be a comic here" />
+
+      <div class='explanation'>
+        {{ content }}
+      </div>
+    </div>
+  </body>
+</html>

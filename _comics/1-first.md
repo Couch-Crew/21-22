@@ -1,6 +1,7 @@
 ---
 title: first post
-layout: default 
+comic-id: 1
+layout: comic 
 ---
 
 hi! this is a test post to see how everything looks
