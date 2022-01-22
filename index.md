@@ -18,10 +18,11 @@ permalink: /
     <span />
   </div>
 
-  <img 
-  class='comic' 
-  src='comics/{{ site.comics.last.image }}' 
-  alt="oops- there's supposed to be a comic here" />
+  <div class='comic'>
+    <img 
+    src='comics/{{ site.comics.last.image }}' 
+    alt="oops- there's supposed to be a comic here" />
+  </div>
 
   <div class='explanation'>
     {{ site.comics.last.content }}
