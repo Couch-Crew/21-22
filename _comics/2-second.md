@@ -2,7 +2,7 @@
 title: last post
 comic-id: 2
 layout: comic 
-image: 1-first.jpeg
+image: chain.jpg
 ---
 
 

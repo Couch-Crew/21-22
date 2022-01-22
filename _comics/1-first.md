@@ -2,6 +2,7 @@
 title: first post
 comic-id: 1
 layout: comic 
+image: 1-first.jpeg
 ---
 
 hi! this is a test post to see how everything looks
