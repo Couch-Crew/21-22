@@ -4,4 +4,5 @@ title: About
 permalink: /about
 ---
 
-Welcome to the about page for incubator/comics
+## Original website design:
+![sketch](/assets/plan.png)

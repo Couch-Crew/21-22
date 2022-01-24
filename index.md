@@ -14,7 +14,7 @@ permalink: /
       <span class='arrow'>&lt;</span>
     </a>
 
-    <h1 class='comic-title'>home | comics</h1>
+    <h1 class='comic-title'>Latest Psycomic</h1>
     <span />
   </div>
 
