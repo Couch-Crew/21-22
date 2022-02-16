@@ -27,8 +27,9 @@ url: "https://novi-incubator.github.io" # the base hostname & protocol for your 
 github_username: novi-incubator 
 
 collections:
-  comics:
+  21-22:
     output: true
+    permalink: /:collection/:title
 
 # Build settings
 theme: jekyll-theme-merlot

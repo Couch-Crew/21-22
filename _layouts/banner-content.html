@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include html-head.html %}
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    {% include nav.html %}
+    <div class='banner'>
+      <div class="banner-backdrop"></div>
+
+      <div id="banner-title">
+        The Incubator
+      </div>
+    </div>
+
+    {{ content }}
+  </body>
+</html>
+
+<style lang="scss">
+
+  .banner {
+    position: absolute;
+    width: 100vw;
+    height: 45vh;
+    top: 0;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .banner-title-group {
+    position: relative;
+    margin: auto;
+    top: 50%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  #banner-title {
+    position: relative;
+
+    font-size: 4em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: auto;
+  }
+
+  #banner-title::after {
+    content: 'Of Novi High School';
+    position: absolute;
+    display: block;
+
+    font-size: 0.3em;
+    color: lightgrey;
+    right: -5em;
+  }
+
+  .banner-backdrop {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('/assets/{{ page.banner }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+  }
+</style>
