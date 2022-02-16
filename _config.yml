@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: incubator comics
+title: the incubator of novi
 email: kenhtsun@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   comics to help you study
-baseurl: "/incubator" # the subpath of your site, e.g. /blog
-url: "https://spesthecat.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  spesthecat
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://novi-incubator.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: novi-incubator 
 
 collections:
   comics:
