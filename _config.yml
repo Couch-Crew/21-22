@@ -32,7 +32,6 @@ collections:
     permalink: /:collection/:title
 
 # Build settings
-theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
