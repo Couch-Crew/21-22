@@ -1,0 +1,44 @@
+---
+---
+.nav-header {
+  position: relative;
+}
+
+.project-display {
+  margin: 0 auto;
+  margin-bottom: 3em;
+  max-width: 50vw;
+}
+
+.project-title {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+#project-name {
+  position: relative;
+
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#project-creators {
+  text-align: center;
+}
+
+.project-banner {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .project-display {
+    max-width: 90vw;
+  }
+}

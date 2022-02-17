@@ -1,0 +1,34 @@
+---
+---
+.banner {
+  position: relative;
+  width: 100vw;
+  height: 45vh;
+  overflow: hidden;
+  top: 0;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.banner-title-group {
+  position: relative;
+  margin: auto;
+  top: 50%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+#banner-title {
+  position: relative;
+
+  font-size: 4em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin: auto;
+}
+
