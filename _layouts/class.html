@@ -1,5 +1,64 @@
----
-layout: banner-content
----
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include html-head.html %}
+    <link rel="stylesheet" href="/css/banner-content.css">
+    <link rel="stylesheet" href="/css/class.css">
+  </head>
+  <body>
+    {% include nav.html %}
+    <div class='banner'>
+      <div class="banner-backdrop"></div>
 
-{{ content }}
+      <div id="banner-title">
+        {{ page.title }}
+      </div>
+    </div>
+
+    <div class="class-projects-display">
+      {% assign projects = site.projects | where: 'year', page.year %}
+
+      <div class="class-project-display">
+        {% assign group = projects | where: 'group', true | first %}
+        {{ group.name }}
+      </div>
+
+      <div class="'individual-projects-display">
+        {% assign individuals = projects | where_exp: 'item', "item.group != true" %} 
+        {% for proj in individuals %}
+          {{ proj.name }}-{{ proj.creators }}
+        {% endfor %}
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+.banner-backdrop {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
+  background-image: url('/assets/{{ page.banner }}');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  transform: scale(1.03); /* to remove the blurry white border */
+}
+
+#banner-title::after {
+  content: '{{ page.subtitle }}';
+  position: absolute;
+  display: block;
+
+  font-size: 0.3em;
+  color: lightgrey;
+  right: -5em;
+}
+</style>

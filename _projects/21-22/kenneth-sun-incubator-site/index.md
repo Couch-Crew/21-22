@@ -2,7 +2,7 @@
 layout: project
 name: Incubator Website
 creators: ['Kenneth Sun']
-category: 21-22
+year: 21
 alt: picture of plan
 ---
 

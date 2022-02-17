@@ -29,9 +29,6 @@ collections:
   projects:
     output: true
     permalink: /:path
-  classes:
-    output: true
-    permalink: /:title
 
 # Build settings
 plugins:
