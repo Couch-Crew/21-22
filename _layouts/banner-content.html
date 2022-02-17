@@ -10,18 +10,20 @@
       <div class="banner-backdrop"></div>
 
       <div id="banner-title">
-        The Incubator
+        {{ page.title }}
       </div>
     </div>
 
-    {{ content }}
+    <div class="banner-content">
+      {{ content }}
+    </div>
   </body>
 </html>
 
 <style lang="scss">
 
   .banner {
-    position: absolute;
+    position: relative;
     width: 100vw;
     height: 45vh;
     top: 0;
@@ -52,7 +54,7 @@
   }
 
   #banner-title::after {
-    content: 'Of Novi High School';
+    content: '{{ page.subtitle }}';
     position: absolute;
     display: block;
 
@@ -75,5 +77,6 @@
     filter: blur(4px);
     -webkit-filter: blur(4px);
     -moz-filter: blur(4px);
+    transform: scale(1.03); /* to remove the blurry white border */
   }
 </style>
