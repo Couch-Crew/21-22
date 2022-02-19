@@ -44,17 +44,40 @@
   }
 }
 
-.individual-project-display {
-  .individual-project-backdrop {
+.individual-projects-display {
+  display: flex;
+  flex-flow: row wrap;
+
+  .individual-project-link {
     position: relative;
-    width: 65%;
+    width: 15vw;
+    height: 15vw;
+    max-width: 300px;
+    max-height: 300px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    .individual-project-name, .individual-project-creators {
+      text-align: center;
+      text-transform: capitalize;
+    }
+  }
+
+  .individual-project-backdrop {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
   }
 }

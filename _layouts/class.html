@@ -45,13 +45,20 @@
           {% assign full_url = proj.url | split: '/' %}
           {% assign dir = full_url | slice: 0, 3 | join: '/' %}
 
-          <a href="{{ dir }}">
+          <a
+          class="individual-project-link"
+          href="{{ dir }}">
             <div
-            style="background-image: url('{{ dir }}/banner.png')"
-            class="individual-project-backdrop">
+            style="background-image: url('{{ dir }}/banner.jpg')"
+            class="individual-project-backdrop"></div>
+
+            <div class="individual-project-name desc-text">
+              {{ proj.name }}
             </div>
 
-            {{ proj.name }}-{{ proj.creators }}
+            <div class="individual-project-creators desc-text">
+              {{ proj.creators }}
+            </div>
           </a>
         {% endfor %}
       </div>
@@ -67,7 +74,7 @@
   width: 100%;
   height: 100%;
 
-  background-image: url('banner.png');
+  background-image: url('class-banner.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,6 +96,6 @@
 }
 
 .class-project-backdrop {
-  background-image: url('{{ group_dir }}/banner.png');
+  background-image: url('{{ group_dir }}/banner.jpg');
 }
 </style>
