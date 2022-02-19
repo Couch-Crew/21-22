@@ -1,2 +1,45 @@
 ---
 ---
+
+.projects-display {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+
+  max-width: 70vw;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.class-project-display {
+  position: relative;
+  height: 20vh;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  .class-project-backdrop {
+    position: relative;
+    width: 65%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+  }
+
+  .class-project-desc {
+    position: relative;
+    width: 50%;
+  }
+
+  &::before {
+    content: 'Class Project';
+    display: inline-block;
+    position: absolute;
+    margin: 1em;
+  }
+}
