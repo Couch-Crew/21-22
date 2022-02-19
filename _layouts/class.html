@@ -35,12 +35,24 @@
         </div>
       </div>
 
-      <div class="'individual-projects-display">
-        {% assign individuals = projects | where_exp: 'item', "item.group != true" %} 
+      <div class="individual-projects-display">
+        {% assign individuals = projects 
+          | where_exp: 'item', "item.group != true" 
+          | where_exp: 'item', "item.layout != 'class'"
+        %} 
+
         {% for proj in individuals %}
-        <a href="{{ proj.url }}">
-          {{ proj.name }}-{{ proj.creators }}
-        </a>
+          {% assign full_url = proj.url | split: '/' %}
+          {% assign dir = full_url | slice: 0, 3 | join: '/' %}
+
+          <a href="{{ dir }}">
+            <div
+            style="background-image: url('{{ dir }}/banner.png')"
+            class="individual-project-backdrop">
+            </div>
+
+            {{ proj.name }}-{{ proj.creators }}
+          </a>
         {% endfor %}
       </div>
       </div>
