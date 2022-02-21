@@ -19,13 +19,14 @@
     <div class="projects-display">
       {% assign projects = site.projects | where: 'year', page.year %}
 
-      <div class="class-project-display">
-        {% assign group_proj = projects | where: 'group', true | first %}
-        {% assign group_full_url = group_proj.url | split: '/' %}
-        {% assign group_dir = group_full_url | slice: 0, 3 | join: '/' %}
+      {% assign group_proj = projects | where: 'group', true | first %}
+      {% assign group_full_url = group_proj.url | split: '/' %}
+      {% assign group_dir = group_full_url | slice: 0, 3 | join: '/' %}
 
-        <div class="class-project-backdrop">
-          <div class="class-project-name">
+      <a
+      class="class-project-link"
+      href="{{ group_dir }}">
+        <div class="class-project-backdrop"> <div class="class-project-name">
             {{ group_proj.name }}
           </div>
         </div>
@@ -33,7 +34,7 @@
         <div class="class-project-description">
           {{ group_proj.description }}
         </div>
-      </div>
+      </a>
 
       <div class="individual-projects-display">
         {% assign individuals = projects 

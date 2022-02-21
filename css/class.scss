@@ -11,12 +11,16 @@
   margin-top: 2em;
 }
 
-.class-project-display {
+.class-project-link {
   position: relative;
   height: 20vh;
 
   display: flex;
   flex-flow: row nowrap;
+
+  &:hover {
+    text-decoration: none;
+  }
 
   .class-project-backdrop {
     position: relative;
@@ -50,10 +54,8 @@
 
   .individual-project-link {
     position: relative;
-    width: 15vw;
-    height: 15vw;
-    max-width: 300px;
-    max-height: 300px;
+    width: 10em;
+    height: 10em;
 
     display: flex;
     flex-flow: column nowrap;
