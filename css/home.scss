@@ -62,6 +62,15 @@
 }
 
 .browse {
-  width: 100vw;
-  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: space-evenly;
+
+  .class-banner {
+    border-radius: 0.5em;
+    padding: 4em;
+    background-size: cover;
+  }
 }

@@ -30,11 +30,24 @@
 
       <div id="title"></div>
 
-      <div class="backdrop"></div>
-    </div>
+      <div class="browse">
+        {% assign classes = site.projects | where: 'layout', 'class' %}
 
-    <div class="browse">
-      
+        {% for class in classes %}
+          {% assign full_url = class.url | split: '/' %}
+          {% assign dir = full_url | slice: 0, 2 | join: '/' %}
+
+          <a class="class-link" href="{{ dir }}">
+            <div 
+            style="background-image: url('{{ dir }}/class-banner.jpg')"
+            class="class-banner">
+              {{ class.title }}
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+
+      <div class="backdrop"></div>
     </div>
   </body>
 </html>
