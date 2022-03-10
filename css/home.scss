@@ -1,6 +1,29 @@
 ---
 ---
 
+.social-links {
+  z-index: 7;
+  height: 6em;
+  width: 100%;
+  margin-top: 2em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .social {
+    width: 5em;
+    height: 5em;
+    margin: 1em 2em;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      width: 6.2em;
+      height: 6.2em;
+    }
+  }
+}
+
 .home {
   position: relative;
   width: 100vw;
@@ -10,15 +33,24 @@
 }
 
 #title {
+  position: relative;
+  margin-top: 10vh;
+  height: 30vh;
 
+  background-image: url('/assets/the-incubator.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .backdrop {
   position: absolute;
+  top: 0;
   z-index: -1;
   width: 100%;
   height: 100%;
 
+  background-image: url('/assets/home-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -9,14 +9,28 @@
   </head>
 
   <body>
-    {% include nav.html %}
-
+    
     <div class='home'>
-      <div class="backdrop"></div>
+      <div class="social-links">
+        <a target="_blank" rel="noopener noreferrer" 
+        href="https://www.instagram.com/noviincubator/">
+          <img src="/assets/insta-logo.png" class="social" />
+        </a>
 
-      <div id="title">
-        The Incubator
+        <a target="_blank" rel="noopener noreferrer" 
+        href="https://www.tiktok.com/@noviincubator">
+          <img src="/assets/tiktok-logo.png" class="social" />
+        </a>
+
+        <a target="_blank" rel="noopener noreferrer" 
+        href="https://twitter.com/noviincubator">
+          <img src="/assets/twitter-logo.png" class="social" />
+        </a>
       </div>
+
+      <div id="title"></div>
+
+      <div class="backdrop"></div>
     </div>
 
     <div class="browse">
@@ -24,19 +38,3 @@
     </div>
   </body>
 </html>
-
-<style>
-.backdrop {
-  background-image: url('/assets/home-bg.jpg');
-}
-
-#banner-title::after {
-  content: 'of Novi High School';
-  position: absolute;
-  display: block;
-
-  font-size: 0.3em;
-  color: lightgrey;
-  right: -5em;
-}
-</style>
