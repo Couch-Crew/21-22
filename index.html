@@ -1,0 +1,42 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include html-head.html %}
+    <link rel="stylesheet" href="/css/home.css">
+  </head>
+
+  <body>
+    {% include nav.html %}
+
+    <div class='home'>
+      <div class="backdrop"></div>
+
+      <div id="title">
+        The Incubator
+      </div>
+    </div>
+
+    <div class="browse">
+      
+    </div>
+  </body>
+</html>
+
+<style>
+.backdrop {
+  background-image: url('/assets/home-bg.jpg');
+}
+
+#banner-title::after {
+  content: 'of Novi High School';
+  position: absolute;
+  display: block;
+
+  font-size: 0.3em;
+  color: lightgrey;
+  right: -5em;
+}
+</style>
