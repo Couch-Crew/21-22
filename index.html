@@ -7,47 +7,60 @@
     {% include html-head.html %}
     <link rel="stylesheet" href="/css/home.css">
   </head>
-
   <body>
-    
-    <div class='home'>
-      <div class="social-links">
-        <a target="_blank" rel="noopener noreferrer" 
-        href="https://www.instagram.com/noviincubator/">
-          <img src="/assets/insta-logo.png" class="social" />
-        </a>
+    {% include nav.html %}
 
-        <a target="_blank" rel="noopener noreferrer" 
-        href="https://www.tiktok.com/@noviincubator">
-          <img src="/assets/tiktok-logo.png" class="social" />
-        </a>
+    <!-- <div class="projects-display">
+      {% assign projects = site.projects %}
 
-        <a target="_blank" rel="noopener noreferrer" 
-        href="https://twitter.com/noviincubator">
-          <img src="/assets/twitter-logo.png" class="social" />
-        </a>
-      </div>
+      {% assign group_proj = projects | where: 'group', true | first %}
+      {% assign group_full_url = group_proj.url | split: '/' %}
+      {% assign group_dir = group_full_url | slice: 0, 3 | join: '/' %}
 
-      <div id="title"></div>
+      <a
+      class="class-project-link"
+      href="{{ group_dir }}">
+        <div class="class-project-banner">
+          <div class="class-project-backdrop"></div>
 
-      <div class="browse">
-        {% assign classes = site.projects | where: 'layout', 'class' %}
+          <div class="class-project-name">
+            {{ group_proj.name }}
+          </div>
+        </div>
 
-        {% for class in classes %}
-          {% assign full_url = class.url | split: '/' %}
-          {% assign dir = full_url | slice: 0, 2 | join: '/' %}
+        <div class="class-project-description">
+          {{ group_proj.description }}
+        </div>
+      </a>
 
-          <a class="class-link" href="{{ dir }}">
-            <div 
-            style="background-image: url('{{ dir }}/class-banner.jpg')"
-            class="class-banner">
-              {{ class.title }}
+      <div class="individual-projects-display">
+        {% assign individuals = projects 
+          | where_exp: 'item', "item.group != true" 
+          | where_exp: 'item', "item.layout != 'class'"
+        %} 
+
+        {% for proj in individuals %}
+          {% assign full_url = proj.url | split: '/' %}
+          {% assign dir = full_url | slice: 0, 3 | join: '/' %}
+
+          <a
+          class="individual-project-link"
+          href="{{ dir }}">
+            <div
+            style="background-image: url('{{ dir }}/banner.jpg')"
+            class="individual-project-backdrop"></div>
+
+            <div class="individual-project-name desc-text">
+              {{ proj.name }}
+            </div>
+
+            <div class="individual-project-creators desc-text">
+              {{ proj.creators }}
             </div>
           </a>
         {% endfor %}
       </div>
-
-      <div class="backdrop"></div>
-    </div>
+      </div>
+    </div> -->
   </body>
 </html>
