@@ -3,6 +3,8 @@
 
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffcc7;
 }
 
 #nav-logo {
@@ -19,27 +21,70 @@ body {
 
   line-height: 20px;
   font-size: 1.5em;
+  background-color: white;
 
   position: absolute;
   width: 100vw;
 
-  margin: 1em 0;
+  padding: 0.5em 0;
+  box-shadow: 0px 0px 5px #000;
   display: flex;
   
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 
-  a {
-    color: white;
-    font-size: bold;
-    font-family: Arial, Helvetica, sans-serif;
+  // .home-link {
+  //   display: flex;
+  //   flex-flow: row nowrap;
+  //   justify-content: center;
+
+  //   &::before {
+  //     content: 'Couch';
+  //     display: block;
+  //     margin: auto 0;
+  //     margin-right: 0.3em;
+  //     font-family: Lato;
+  //     color: #999;
+  //   }
+
+  //   &::after {
+  //     content: 'Crew';
+  //     display: block;
+  //     margin: auto 0;
+  //     margin-left: 0.3em;
+  //     font-family: Lato;
+  //     color: #999;
+  //   }
+  // }
+
+  #logo {
+    width: 2em;
   }
-  
+
+  a.left > span {
+    margin-left: auto;
+  }
+
+  a.right > span {
+    margin-right: auto;
+  }
+
   .nav-link {
-    position: relative;
-    text-decoration: none;
-    margin: auto 1em;
-    height: 1em;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    color: white;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #9b9b9b;
+    margin: 0 1em;
+
+    &:hover {
+      color: #9b9b9b;
+      -webkit-text-stroke-width: 0;
+      text-decoration: none;
+    }
   }
 }
