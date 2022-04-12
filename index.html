@@ -5,11 +5,28 @@
 <html lang="en">
   <head>
     {% include html-head.html %}
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/landing.css">
   </head>
   <body>
     {% include nav.html %}
 
+    <div class="pan-container">
+      <div class="picture-container">
+        <img class='background' src="/assets/class.jpg" alt="Classroom" />
+
+        <div style="left: 50%; top: 60.6%;" class="tag">
+          <a href='/oop'>
+            <img src="/assets/insta-logo.png" alt="insta" />
+          </a>
+        </div>
+
+        <div style="left: 20%; top: 20%;" class="tag">
+          <a href='/oop2'>
+            <img src="/assets/twitter-logo.png" alt="twitter" />
+          </a>
+        </div>
+      </div>
+    </div>
     <!-- <div class="projects-display">
       {% assign projects = site.projects %}
 
