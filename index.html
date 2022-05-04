@@ -14,17 +14,32 @@
       <div class="picture-container">
         <img class='background' src="/assets/class.jpg" alt="Classroom" />
 
-        <div style="left: 50%; top: 60.6%;" class="tag">
-          <a href='/oop'>
-            <img src="/assets/insta-logo.png" alt="insta" />
-          </a>
-        </div>
+        {% for project in site.projects %}
+          {% for pos in project.pos %}
+            <a 
+            class="tag"
+            style="
+              left: {{ pos[0] }};
+              top: {{ pos[1] }};
+              background-image: url('/assets/{{ project.url | split: '/' | second }}.jpg');"
+            href="{{ project.url }}">
+              <!-- <div
+              class="tag" 
+              style="
+                left: {{ pos[0] }};
+                top: {{ pos[1] }};
+                background-image: url('/assets/{{ project.url | split: '/' | second }}.jpg');">
+              </div> -->
+            </a>
+          {% endfor %}
 
-        <div style="left: 20%; top: 20%;" class="tag">
-          <a href='/oop2'>
-            <img src="/assets/twitter-logo.png" alt="twitter" />
-          </a>
-        </div>
+        {% endfor %}
+<!-- 
+        <a href="/oop2">
+          <div 
+          style="left: 35%; top: 40.12%; background-image: url('/assets/twitter-logo.png');" class="tag">
+          </div>
+        </a> -->
       </div>
     </div>
     <!-- <div class="projects-display">
