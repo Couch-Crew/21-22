@@ -1,8 +1,7 @@
 ---
 title: "CAP in Novi"
 pos: [["23%", "43%"]]
-creator: ["Masaru Mori"]
-icon: 
+creators: ["Masaru Mori"]
 ---
 
 ## Q: Why are you doing this project?

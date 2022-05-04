@@ -8,7 +8,7 @@
     {% include nav.html %}
     <div class='project-display'>
       <div class="project-title">
-        <div id='project-name'>{{ page.name }}</div>
+        <div id='project-name'>{{ page.title }}</div>
 
         <div id="project-creators">
           {% for creator in page.creators %}
@@ -16,11 +16,6 @@
           {% endfor %}
         </div>
       </div>
-
-      <img
-      src="banner.jpg"
-      alt="{{ page.banner_alt }}"
-      class='project-banner' />
 
       <div class='project-writeup'>
         {{ content }}

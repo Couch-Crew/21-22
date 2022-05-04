@@ -30,6 +30,13 @@ collections:
     output: true
     permalink: /:path
 
+defaults:
+  -
+    scope:
+      type: "projects"
+    values:
+      layout: "project"
+
 # Build settings
 plugins:
   - jekyll-feed

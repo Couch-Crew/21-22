@@ -1,8 +1,7 @@
 ---
 title: "Easy Sched"
 pos: [["73%", "43%"]]
-creator: ["Julia Tauro"]
-icon: 
+creators: ["Julia Tauro"]
 ---
 
 
