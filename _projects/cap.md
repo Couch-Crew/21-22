@@ -4,11 +4,17 @@ pos: [["23%", "43%"]]
 creators: ["Masaru Mori"]
 ---
 
-## Q: Why are you doing this project?
-A: I struggle a lot with motivation and it helps me to see my progress visually. I wanted to do the same for others.
+# brief
+My project is bringing the organization, Civil Air Patrol to Novi. I think my project is good for students that join CAP, giving leadership opportunities. 
 
-## Q: What was your biggest challenge?
-A: The coding.
+## Why are you doing this project?
+I needed to find a new meeting place for my squadron and our squadron needs more members. 
 
-## Q: What was your biggest succcess?
-A: The design.
+## What was your biggest challenge?
+My biggest challenge was getting rejected from the school when I asked to make CAP a club in NHS.
+
+## What was your biggest succcess?
+My greatest success was finding a church that was willing to let us use their space.
+
+## Do you have any future plans for this project?
+My plan is to hopefully get enough members to make up for the cadets leaving after this summer and more. Once the cadets join, I will start training them to prepare for this summer's encampment. 

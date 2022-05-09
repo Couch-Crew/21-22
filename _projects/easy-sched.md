@@ -4,14 +4,18 @@ pos: [["73%", "43%"]]
 creators: ["Julia Tauro"]
 ---
 
-
+# brief
 I think my project is a great start to a program that could be even more beneficial for students in the future.
+You can view the website <a href='easysched.jtauro.repl.co'> here </a>
 
-## Q: Why are you doing this project?
-### A: I struggle a lot with motivation and it helps me to see my progress visually. I wanted to do the same for others.
+## Why are you doing this project?
+I wanted to teach myself how to create a website and provide a support tool for parents and students who are confused by high school scheduling.
 
-## Q: What was your biggest challenge?
-### A: The coding.
+## What was your biggest challenge?
+Learning new coding languages and finding out information about them in new ways.
 
-## Q: What was your biggest succcess?
-### A: The design.
+## What was your biggest succcess?
+Getting my design for my website out of my head and written into working code!
+
+## Do you have any future plans for this project?
+Although I will not continue to update my program annually, I hope it can be an inspiration to future students and possibly a starting point in case another Incubator student would like to take it further.
