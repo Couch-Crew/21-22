@@ -7,17 +7,21 @@
   <body>
     {% include nav.html %}
     <div class='project-display'>
-      <div class="project-title">
-        <div id='project-name'>{{ page.title }}</div>
+      <div class="project-meta">
+        <h1 id='project-title'>{{ page.title }}</h1>
 
-        <div id="project-creators">
+        <div class="project-creators">
           {% for creator in page.creators %}
             <span class="creator">{{ creator }}</span>
           {% endfor %}
         </div>
+
+        <img
+        class="project-img"
+        src="/assets/{{ page.url | split: '/' | second }}.jpg" />
       </div>
 
-      <div class='project-writeup'>
+      <div class='project-content'>
         {{ content }}
       </div>
     </div>

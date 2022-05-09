@@ -1,0 +1,37 @@
+---
+---
+#project-title {
+  text-align: center;
+}
+
+.project-creators {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.project-img {
+  display: block;
+  margin: auto;
+  max-width: 65%;
+}
+
+.project-display {
+  margin: auto;
+}
+
+@media screen and (min-width: 745px) {
+  .project-img {
+    max-width: 50%;
+  }
+
+  .project-display {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .project-img {
+    max-width: 35%;
+  }
+}
