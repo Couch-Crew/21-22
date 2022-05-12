@@ -39,6 +39,9 @@
 
 #project-title {
   color: #F06060;
+  font-family: "Jura", "Prompt", "Monda";
+  font-size: 3em;
+  font-variant: petite-caps;
 }
 
 .project-creators {
@@ -58,8 +61,15 @@
 
 h2 {
   color: black;
+  font-family: "Cutive", "Sanchez", "Times New Roman", serif;
+  font-size: 1.2em;
+
+  &:first-letter {
+    color: #F3B562;
+  }
 }
 
 p {
   color: #5C4B51;
+  font-family: "Hind Vadodara", "Hind", "Oxygen", sans-serif;
 }
