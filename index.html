@@ -22,7 +22,7 @@
               left: {{ pos[0] }};
               top: {{ pos[1] }};
               background-image: url('{{ site.baseurl }}/assets/{{ project.url | split: '/' | second }}.jpg');"
-            href="{{ project.url }}">
+            href="{{ site.baseurl }}/{{ project.url | split: '/' | second }}">
               <!-- <div
               class="tag" 
               style="
