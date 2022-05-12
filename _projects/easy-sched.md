@@ -6,7 +6,7 @@ creators: ["Julia Tauro"]
 
 # brief
 I think my project is a great start to a program that could be even more beneficial for students in the future.
-You can view the website <a href='easysched.jtauro.repl.co'> here </a>
+You can view the website <a target='blank' href='https://easysched.jtauro.repl.co'> here </a>.
 
 ## Why are you doing this project?
 I wanted to teach myself how to create a website and provide a support tool for parents and students who are confused by high school scheduling.
