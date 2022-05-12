@@ -5,14 +5,14 @@
 <html lang="en">
   <head>
     {% include html-head.html %}
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/home.css">
   </head>
   <body>
     {% include nav.html %}
 
     <div class="pan-container">
       <div class="picture-container">
-        <img class='background' src="/assets/class.jpg" alt="Classroom" />
+        <img class='background' src="{{ site.baseurl }}/assets/class.jpg" alt="Classroom" />
 
         {% for project in site.projects %}
           {% for pos in project.pos %}
@@ -21,7 +21,7 @@
             style="
               left: {{ pos[0] }};
               top: {{ pos[1] }};
-              background-image: url('/assets/{{ project.url | split: '/' | second }}.jpg');"
+              background-image: url('{{ site.baseurl }}/assets/{{ project.url | split: '/' | second }}.jpg');"
             href="{{ project.url }}">
               <!-- <div
               class="tag" 
