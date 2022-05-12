@@ -37,11 +37,29 @@
   }
 }
 
+#project-title {
+  color: #F06060;
+}
+
+.project-creators {
+  color: #F3B562;
+}
+
 #brief {
   display: none;
+
   + p {
     text-align: center;
     margin: 0 3em;
     margin-bottom: 2em;
+    color: #5C4B51;
   }
+}
+
+h2 {
+  color: black;
+}
+
+p {
+  color: #5C4B51;
 }
