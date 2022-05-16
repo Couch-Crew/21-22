@@ -1,6 +1,21 @@
 ---
 ---
 
+.couch-crew-welcome {
+  height: 61.8vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-bg {
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ filter: blur(4px);
+ -webkit-filter: blur(4px);
+ transform: scale(1.02);
+}
+
 .pan-container {
   position: relative;
   width: 100vw;
@@ -10,11 +25,12 @@
 
 .picture-container {
   position: relative;
+  height: 100%;
   overflow: hidden;
   display: inline-block;
 
   .background {
-    max-height: 200vh;
+    height: 100%;
     transition: max-height 0.3s;
   }
 
@@ -69,7 +85,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 795px) { // width of first image
   .background {
     width: 100vw;
     max-height: 100% !important;

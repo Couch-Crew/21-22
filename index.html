@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/home.css">
   </head>
   <body>
-    {% include nav.html %}
 
+    <div class="couch-crew-welcome">
+      <img class="welcome-bg" src="{{ site.baseurl }}/assets/class.jpg" alt="Group picture of students in the class" />
+      <h1 class="welcome-title">Couch Crew</h1>
+    </div>
     <div class="pan-container">
       <div class="picture-container">
-        <img class='background' src="{{ site.baseurl }}/assets/class.jpg" alt="Classroom" />
+        <img class='background' src="{{ site.baseurl }}/assets/class_1.jpg" alt="Classroom" />
 
         {% for project in site.projects %}
           {% for pos in project.pos %}
