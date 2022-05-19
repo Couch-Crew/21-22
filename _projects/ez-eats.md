@@ -2,6 +2,7 @@
 title: "Ez Eats"
 pos: [["", ""]]
 creators: ["Abhishek Vangipuram", "Jimmy Dai"]
+orientation: "up"
 ---
 
 # brief

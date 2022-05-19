@@ -2,6 +2,7 @@
 title: "College Crash Course"
 pos: [["", ""]]
 creators: ["Anjani Koneru"]
+orientation: up
 ---
 
 # brief

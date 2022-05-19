@@ -55,26 +55,36 @@
       </div>
     </div>
 
+    <hr class="couch-divider intro--pic1" />
+
     <div class="pan-container">
       <div class="picture-container">
         <img class='background' src="{{ site.baseurl }}/assets/class_1.jpg" alt="Classroom" />
+        {% assign up_proj = site.projects | where: "orientation", "up" %}
+        {% assign down_proj = site.projects | where: "orientation", "down" %}
 
-        {% for project in site.projects %}
+        {% for project in up_proj %}
           {% for pos in project.pos %}
             <a 
-            class="tag"
+            class="tag up"
             style="
               left: {{ pos[0] }};
               top: {{ pos[1] }};
               background-image: url('{{ site.baseurl }}/assets/{{ project.url | split: '/' | second }}.jpg');"
             href="{{ site.baseurl }}/{{ project.url | split: '/' | second }}">
-              <!-- <div
-              class="tag" 
-              style="
-                left: {{ pos[0] }};
-                top: {{ pos[1] }};
-                background-image: url('/assets/{{ project.url | split: '/' | second }}.jpg');">
-              </div> -->
+            </a>
+          {% endfor %}
+        {% endfor %}
+
+        {% for project in down_proj %}
+          {% for pos in project.pos %}
+            <a 
+            class="tag down"
+            style="
+              left: {{ pos[0] }};
+              top: {{ pos[1] }};
+              background-image: url('{{ site.baseurl }}/assets/{{ project.url | split: '/' | second }}.jpg');"
+            href="{{ site.baseurl }}/{{ project.url | split: '/' | second }}">
             </a>
           {% endfor %}
         {% endfor %}

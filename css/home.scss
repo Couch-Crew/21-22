@@ -64,17 +64,14 @@
       font-weight: 600;
     }
   }
-
-  .brief--intro {
-    
-  }
 }
 
 .pan-container {
   position: relative;
   width: 100vw;
   height: calc(100vh - 3em);
-  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 .picture-container {
@@ -109,10 +106,17 @@
       height: 100%;
       width: 2px;
       position: absolute;
-      top: 120%;
       left: 50%;
       background-color: white;
       transition: all 0.3s;
+    }
+  
+    &.up::before {
+      top: 120%;     
+    }
+
+    &.down::before {
+      bottom: 120%;     
     }
 
     // // circle

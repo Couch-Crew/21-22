@@ -1,7 +1,8 @@
 ---
 title: "Easy Sched"
-pos: [["73%", "43%"]]
+pos: [["30%", "58%"]]
 creators: ["Julia Tauro"]
+orientation: "down"
 ---
 
 # brief

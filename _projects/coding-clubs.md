@@ -2,6 +2,7 @@
 title: "Kids Coding Clubs"
 pos: [["", ""]]
 creators: ["Aditi Vishnubhatla"]
+orientation: up
 ---
 
 # brief

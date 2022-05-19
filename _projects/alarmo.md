@@ -2,6 +2,7 @@
 title: "Alarmo"
 pos: [["", ""]]
 creators: ["Rayyan Zahir", "Ribal Dakhallah"]
+orientation: up
 ---
 
 # brief

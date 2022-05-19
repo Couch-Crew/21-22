@@ -2,6 +2,7 @@
 title: "The Equity Project"
 pos: [["", ""]]
 creators: ["Nahlia Moncrief"]
+orientation: up
 ---
 
 # brief
