@@ -1,7 +1,9 @@
 ---
 title: "SAE Jewelry"
-pos: [["", ""]]
+pos: [["15%", "67%"], ["24%", "57%"]]
 creators: ["Ember Zhao", "Joslyn Wang"]
+orientation: up
+pic: 1
 ---
 
 # brief

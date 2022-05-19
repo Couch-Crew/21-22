@@ -119,19 +119,6 @@
       bottom: 120%;     
     }
 
-    // // circle
-    // &::after {
-    //   content: '';
-    //   display: block;
-    //   height: 100%;
-    //   width: 100%;
-    //   border-radius: 50%;
-    //   outline: 1px solid #fff;
-
-    //   transition: background-color 0.3s;
-    //   background-color: rgba($color: white, $alpha: 0);
-    // }
-
     &:hover {
       transform: translate(-50%, -250%) scale(1.2);
       box-shadow: 0 0 1px 4px white;

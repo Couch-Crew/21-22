@@ -57,44 +57,44 @@
 
     <hr class="couch-divider intro--pic1" />
 
-    <div class="pan-container">
-      <div class="picture-container">
-        <img class='background' src="{{ site.baseurl }}/assets/class_1.jpg" alt="Classroom" />
-        {% assign up_proj = site.projects | where: "orientation", "up" %}
-        {% assign down_proj = site.projects | where: "orientation", "down" %}
-
-        {% for project in up_proj %}
-          {% for pos in project.pos %}
-            <a 
-            class="tag up"
-            style="
-              left: {{ pos[0] }};
-              top: {{ pos[1] }};
-              background-image: url('{{ site.baseurl }}/assets/{{ project.url | split: '/' | second }}.jpg');"
-            href="{{ site.baseurl }}/{{ project.url | split: '/' | second }}">
-            </a>
+    {% assign pics = site.projects | group_by: "pic" | where_exp: "item", "item.name != ''" %}
+    {% for pic in pics %}
+      {% assign up_proj = pic.items | where: "orientation", "up" %}
+      {% assign down_proj = pic.items | where: "orientation", "down" %}
+      <div class="pan-container">
+        <div class="picture-container">
+          <img
+          class="background"
+          src="{{ site.baseurl }}/assets/class_{{ pic.name }}.jpg" />
+          {% for project in pic.items %}
+            {% if project.orientation == "up" %}
+              {% for pos in project.pos %}
+                <a 
+                class="tag up"
+                style="
+                  left: {{ pos[0] }};
+                  top: {{ pos[1] }};
+                  background-image: url('{{ site.baseurl }}/assets/{{ project.url | split: '/' | second }}.jpg');"
+                href="{{ site.baseurl }}/{{ project.url | split: '/' | second }}">
+                </a>
+              {% endfor %}
+            {% elsif project.orientation == "down" %}
+              {% for pos in project.pos %}
+                <a 
+                class="tag down"
+                style="
+                  left: {{ pos[0] }};
+                  top: {{ pos[1] }};
+                  background-image: url('{{ site.baseurl }}/assets/{{ project.url | split: '/' | second }}.jpg');"
+                href="{{ site.baseurl }}/{{ project.url | split: '/' | second }}">
+                </a>
+              {% endfor %}
+            {% endif %}
           {% endfor %}
-        {% endfor %}
-
-        {% for project in down_proj %}
-          {% for pos in project.pos %}
-            <a 
-            class="tag down"
-            style="
-              left: {{ pos[0] }};
-              top: {{ pos[1] }};
-              background-image: url('{{ site.baseurl }}/assets/{{ project.url | split: '/' | second }}.jpg');"
-            href="{{ site.baseurl }}/{{ project.url | split: '/' | second }}">
-            </a>
-          {% endfor %}
-        {% endfor %}
-        <!-- 
-        <a href="/oop2">
-          <div 
-          style="left: 35%; top: 40.12%; background-image: url('/assets/twitter-logo.png');" class="tag">
-          </div>
-        </a> -->
+        </div>
       </div>
-    </div>
+
+      <hr class="couch-divider pic-{{ pic.name }}" />
+    {% endfor %}
   </body>
 </html>

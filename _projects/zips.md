@@ -2,6 +2,8 @@
 title: "Zips"
 pos: [["", ""]]
 creators: ["Rishi Rai"]
+orientation: up
+pic: 2
 ---
 
 # brief

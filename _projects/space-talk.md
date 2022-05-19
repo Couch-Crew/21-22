@@ -1,7 +1,9 @@
 ---
 title: "Space Talk"
-pos: [["", ""]]
+pos: [["77%", "40%"]]
 creators: ["Júlia Araújo"]
+orientation: up
+pic: 1
 ---
 
 # brief
