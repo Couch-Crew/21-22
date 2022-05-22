@@ -1,7 +1,9 @@
 ---
 title: "Hour of Action"
-pos: [["", ""]]
+pos: [["51%", "48%"]]
 creators: ["Anika Venkannagari"]
+orientation: down
+pic: 2
 ---
 
 # brief

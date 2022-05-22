@@ -1,7 +1,9 @@
 ---
 title: "Truefight Clothing"
-pos: [["", ""]]
+pos: [["32.5%", "32%"]]
 creators: ["Sriganesh Ballim", "Omair Shamsher"]
+orientation: down
+pic: 1
 ---
 
 # brief

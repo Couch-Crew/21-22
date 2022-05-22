@@ -1,9 +1,9 @@
 ---
 title: "Zips"
-pos: [["", ""]]
+pos: [["45.5%", "60%"]]
 creators: ["Rishi Rai"]
-orientation: up
-pic: 2
+orientation: down
+pic: 3
 ---
 
 # brief

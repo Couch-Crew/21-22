@@ -1,7 +1,9 @@
 ---
 title: "Ascent"
-pos: [["", ""]]
+pos: [["27.5%", "32%"], ["36%", "32%"]]
 creators: ["Scott Haakenson", "Amr Hussien"]
+orientation: up
+pic: 1
 ---
 
 # brief

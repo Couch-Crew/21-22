@@ -1,7 +1,9 @@
 ---
 title: "Hardball Armour Back/Rib Guard"
-pos: [["", ""]]
+pos: [["18.7%", "44%"]]
 creators: ["Boden Fernsler"]
+orientation: up
+pic: 2
 ---
 
 # brief

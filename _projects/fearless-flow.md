@@ -1,6 +1,6 @@
 ---
 title: "Fearless Flow Foundation"
-pos: [["55%", "100%"], ["80%", "110%"]]
+pos: [["55%", "70%"], ["80%", "80%"]]
 creators: ["Varnika Chandra", "Vaishnavi Jagalur", "Medha Maroju"]
 orientation: down 
 pic: 1

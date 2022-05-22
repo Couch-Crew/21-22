@@ -57,7 +57,7 @@
 
     <hr class="couch-divider intro--pic1" />
 
-    {% assign pics = site.projects | group_by: "pic" | where_exp: "item", "item.name != ''" %}
+    {% assign pics = site.projects | group_by: "pic" | where_exp: "item", "item.name != ''" | sort: "name" %}
     {% for pic in pics %}
       {% assign up_proj = pic.items | where: "orientation", "up" %}
       {% assign down_proj = pic.items | where: "orientation", "down" %}

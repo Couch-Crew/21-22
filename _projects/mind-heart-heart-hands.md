@@ -1,7 +1,9 @@
 ---
 title: "Mind to Heart Heart to Hands"
-pos: [["", ""]]
+pos: [["42%", "50%"]]
 creators: ["Mia Abbruzzino"]
+orientation: down
+pic: 2
 ---
 
 # brief

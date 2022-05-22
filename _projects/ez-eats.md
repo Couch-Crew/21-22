@@ -1,8 +1,9 @@
 ---
 title: "Ez Eats"
-pos: [["", ""]]
+pos: [["48%", "44%"]]
 creators: ["Abhishek Vangipuram", "Jimmy Dai"]
-orientation: "up"
+orientation: up
+pic: 3
 ---
 
 # brief

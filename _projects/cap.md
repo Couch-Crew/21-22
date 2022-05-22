@@ -1,9 +1,9 @@
 ---
 title: "CAP in Novi"
-pos: [["25.5%", "29%"]]
+pos: [["64.5%", "49%"]]
 creators: ["Masaru Mori"]
 orientation: up
-pic: 1
+pic: 2
 ---
 
 # brief

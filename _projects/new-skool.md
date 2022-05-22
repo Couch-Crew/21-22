@@ -1,7 +1,9 @@
 ---
 title: "New Skool"
-pos: [["", ""]]
+pos: [["80%", "50%"], ["68%", "60%"]]
 creators: ["Grace Harte", "Sahithi Nalamalpu"]
+orientation: up
+pic: 2
 ---
 
 # brief

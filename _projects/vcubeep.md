@@ -1,7 +1,9 @@
 ---
 title: "VisualCube Education Platform"
-pos: [["", ""]]
+pos: [["33.4%", "44%"]]
 creators: ["Arseniy Ilinich"]
+orientation: up
+pic: 2
 ---
 
 # brief

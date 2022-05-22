@@ -1,8 +1,9 @@
 ---
 title: "College Crash Course"
-pos: [["", ""]]
+pos: [["48%", "50%"]]
 creators: ["Anjani Koneru"]
-orientation: up
+orientation: down 
+pic: 3
 ---
 
 # brief

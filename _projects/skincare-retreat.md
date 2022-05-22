@@ -1,7 +1,9 @@
 ---
 title: "The Skincare Retreat"
-pos: [["", ""]]
+pos: [["53.5%", "47%"]]
 creators: ["Fariza Chowdhury"]
+orientation: up
+pic: 3
 ---
 
 # brief

@@ -1,8 +1,9 @@
 ---
 title: "Desi Ya Pardesi"
-pos: [["", ""]]
+pos: [["60%", "32%"]]
 creators: ["Somya Valecha"]
-orientation: up
+orientation: down 
+pic: 1
 ---
 
 # brief

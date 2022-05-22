@@ -90,7 +90,6 @@
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    transform: translate(-50%, -250%);
     
     background-position: center;
     background-size: cover;
@@ -111,16 +110,23 @@
       transition: all 0.3s;
     }
   
-    &.up::before {
-      top: 120%;     
+    &.up {
+      transform: translate(-50%, -250%);
+
+      &::before {
+        top: 120%;     
+      }
     }
 
-    &.down::before {
-      bottom: 120%;     
+    &.down {
+      transform: translate(-50%, 100%);
+      
+      &::before {
+        bottom: 120%;     
+      }
     }
 
     &:hover {
-      transform: translate(-50%, -250%) scale(1.2);
       box-shadow: 0 0 1px 4px white;
 
       &::before {

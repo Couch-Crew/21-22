@@ -1,7 +1,9 @@
 ---
-title: "Noori Shankar"
-pos: [["", ""]]
-creators: ["SlackingSloth"]
+title: "SlackingSloth"
+pos: [["68%", "57%"]]
+creators: ["Noori Shankar"]
+orientation: up
+pic: 3
 ---
 
 # brief

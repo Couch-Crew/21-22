@@ -1,8 +1,9 @@
 ---
 title: "Alarmo"
-pos: [["", ""]]
+pos: [["27%", "47%"], ["13%", "46%"]]
 creators: ["Rayyan Zahir", "Ribal Dakhallah"]
 orientation: up
+pic: 2
 ---
 
 # brief
