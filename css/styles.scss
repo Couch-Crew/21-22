@@ -13,10 +13,12 @@ body {
   font-style: italic;
   color: black;
   text-decoration: underline 2px #F06060;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #F06060;
 
   &:hover, &:focus, &:active {
     color: #F06060;
-    text-decoration: underline 2px #F06060;
   }
 }
 
