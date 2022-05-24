@@ -1,7 +1,9 @@
 ---
 title: "Meal Mania App"
-pos: [["", ""]]
+pos: [["54%", "38%"]]
 creators: ["Shriya Rudraraju"]
+orientation: up
+pic: 1
 ---
 
 # brief

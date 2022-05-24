@@ -1,7 +1,9 @@
 ---
 title: "Run With Us Club"
-pos: [["", ""]]
+pos: [["63%", "31%"]]
 creators: ["Abhi Jillellamudi"]
+orientation: up
+pic: 1
 ---
 
 # brief

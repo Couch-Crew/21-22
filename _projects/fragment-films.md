@@ -1,7 +1,9 @@
 ---
 title: "Fragment Films"
-pos: [["", ""]]
+pos: [["57%", "42%"]]
 creators: ["Aimee Wu"]
+orientation: up
+pic: 3
 ---
 
 # brief

@@ -1,7 +1,9 @@
 ---
 title: "Read The Room"
-pos: [["", ""]]
+pos: [["45.5%", "43%"]]
 creators: ["Mahak Harbola"]
+orientation: up
+pic: 2
 ---
 
 # brief

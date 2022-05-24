@@ -1,8 +1,9 @@
 ---
 title: "Cricket for a Cause"
-pos: [["", ""]]
+pos: [["60%", "32%"]]
 creators: ["Aditi Viswanatha"]
-orientation: up
+orientation: down 
+pic: 1
 ---
 
 # brief

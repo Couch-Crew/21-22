@@ -1,7 +1,9 @@
 ---
 title: "Kids Coding Clubs"
-pos: [["", ""]]
+pos: [["60%", "49%"]]
 creators: ["Aditi Vishnubhatla"]
+orientation: up
+pic: 3
 ---
 
 # brief

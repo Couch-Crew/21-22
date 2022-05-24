@@ -1,8 +1,9 @@
 ---
 title: "Color To Relax"
-pos: [["", ""]]
+pos: [["53%", "60%"]]
 creators: ["Sahithi Alla"]
-orientation: up
+orientation: down
+pic: 3
 ---
 
 # brief
