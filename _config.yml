@@ -21,7 +21,7 @@
 title: the incubator of novi
 email: kenhtsun@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-baseurl: "/couch-crew" # the subpath of your site, e.g. /blog
+baseurl: "/21-22" # the subpath of your site, e.g. /blog
 url: "https://novi-incubator.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: novi-incubator 
 
